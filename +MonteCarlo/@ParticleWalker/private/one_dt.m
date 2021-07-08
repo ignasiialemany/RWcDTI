@@ -35,7 +35,7 @@ while norm(dxdydz, 2) > ZERO
     intersectInfo = substrate.intersectMyocytes(position_LOCAL, dxdydz, 'local');
     % intersectInfo now contains info about first encountered intersection
 
-    stepEps = 1e-8;
+    stepEps = 1e-6;
     if isempty(intersectInfo) % no intersection encountered
 
         position_future = position_LOCAL + dxdydz;
